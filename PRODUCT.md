@@ -79,7 +79,9 @@ ornament.
 The group mark is an open electrical circuit shaped through four colored doors:
 one shared current, four distinct restaurant worlds. Each façade previews its
 chapter-scale environment through the same unobstructed full-bleed frame,
-creating continuity without flattening the four identities.
+creating continuity without flattening the four identities. As the desktop
+viewport grows, the four artwork frames expand together while the supporting
+detail console retains its natural content height.
 
 The approved homepage thesis is **Four restaurants. Four ways to play.** The
 tone is confident, restrained, warm, and specific. The group introduces; each

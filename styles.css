@@ -404,7 +404,7 @@ svg {
 
 .block-stage {
   display: grid;
-  grid-template-rows: 118px auto minmax(164px, auto);
+  grid-template-rows: 118px minmax(300px, 1fr) auto;
   min-width: 0;
   overflow: hidden;
   position: relative;
@@ -1086,7 +1086,7 @@ svg {
     padding: 14px;
   }
 
-  .block-stage { grid-template-rows: 110px auto auto; }
+  .block-stage { grid-template-rows: 110px minmax(300px, 1fr) auto; }
 
   .game-chapter,
   .game-chapter:nth-child(even) {

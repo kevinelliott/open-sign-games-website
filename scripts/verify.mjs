@@ -71,6 +71,11 @@ if (!facadeArtRule.includes("object-fit: cover") || !facadeArtRule.includes("obj
   fail("façade artwork needs one shared centered cover crop");
 }
 
+const blockStageRule = css.match(/\.block-stage\s*\{([^}]*)\}/)?.[1] ?? "";
+if (!blockStageRule.includes("grid-template-rows: 118px minmax(300px, 1fr) auto")) {
+  fail("desktop stage must give surplus viewport height to façade artwork only");
+}
+
 if (!html.includes("assets/open-sign-mark.svg")) fail("group identity mark is missing");
 
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
