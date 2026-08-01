@@ -76,7 +76,7 @@ notched-corner motif, accessibility primitives, and truthful ownership language.
 Each restaurant keeps its own visual identity, topology, tempo, and cultural
 ornament.
 
-The group mark is an open electrical circuit shaped through four colored doors:
+The group mark is an open neon plate surrounding a four-tined restaurant fork:
 one shared current, four distinct restaurant worlds. Each façade previews its
 chapter-scale environment through the same unobstructed full-bleed frame,
 creating continuity without flattening the four identities. As the desktop

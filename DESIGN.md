@@ -176,8 +176,10 @@ and grounded spatial depth rather than sketch illustration or generic key art.
 
 ### Group identity mark
 
-- **Structure:** one open fabricated frame, one continuous cobalt current, four
-  restaurant-color doors, and two opposing electrodes.
+- **Structure:** an open, plate-shaped cobalt circuit encloses a four-tined fork.
+  Each tine carries one restaurant color; two warm electrodes terminate the
+  broken perimeter. The food symbol reads first, while the open circuit keeps
+  the group-level sign language.
 - **Behavior:** the silhouette stays identical at favicon, header, and group-sign
   scale; the wordmark remains live HTML rather than text baked into the asset.
 

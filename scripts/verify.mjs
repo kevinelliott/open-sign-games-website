@@ -78,6 +78,11 @@ if (!blockStageRule.includes("grid-template-rows: 118px minmax(300px, 1fr) auto"
 
 if (!html.includes("assets/open-sign-mark.svg")) fail("group identity mark is missing");
 
+const mark = read("assets/open-sign-mark.svg");
+if (!mark.includes('data-part="open-plate"') || !mark.includes('data-part="four-tine-fork"')) {
+  fail("group mark must combine the open plate and four-tine restaurant fork");
+}
+
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
 const duplicateIds = ids.filter((id, index) => ids.indexOf(id) !== index);
 if (duplicateIds.length) fail(`duplicate IDs: ${[...new Set(duplicateIds)].join(", ")}`);

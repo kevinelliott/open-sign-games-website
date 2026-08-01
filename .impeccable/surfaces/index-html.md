@@ -42,7 +42,7 @@ photorealistic surfaces are explicitly not approved content.
 | Visible ingredient | Commitment | Medium |
 | --- | --- | --- |
 | Editorial rail | Exact title, two-line thesis, concise intro, primary action, keyboard-readable selector | Semantic HTML/CSS |
-| Group identity | Open-circuit mark carrying four restaurant colors at favicon, header, and sign scale | Authored SVG |
+| Group identity | Open neon plate and four-tined restaurant fork carrying the four restaurant colors at favicon, header, and sign scale | Authored SVG |
 | Continuous sign circuit | Cobalt tube, visible bridge hardware, warm electrode endpoints; functional selection state | Authored inline SVG/CSS |
 | Stable four-door block | Four equal bays always visible on desktop; each previews its full chapter world through a deliberate crop and absorbs surplus viewport height without stretching the detail console | Semantic HTML/CSS + optimized WebP |
 | Dos Esposas | Unobstructed full-bleed cantina room, compose/cook/inspect | HTML/CSS + optimized WebP |

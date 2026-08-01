@@ -1,13 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title description">
   <title id="title">Open Sign Restaurant Group mark</title>
-  <desc id="description">An open electric sign circuit passing four distinct restaurant doors.</desc>
+  <desc id="description">An open neon plate surrounding a four-colored restaurant fork.</desc>
   <rect width="96" height="96" fill="#05070a"/>
-  <polyline points="14,69 14,23 14,12 68,12 68,23 82,23 82,74 28,74 28,84 14,84" fill="none" stroke="#526078" stroke-width="5"/>
-  <polyline points="27,28 68,28 68,43 40,43 40,56 68,56 68,71 27,71" fill="none" stroke="#b4d2ff" stroke-linecap="square" stroke-linejoin="miter" stroke-width="5"/>
-  <path d="M22 21h12v12H22z" fill="#ff6b43"/>
-  <path d="M62 21h12v12H62z" fill="#8bb2ff"/>
-  <path d="M22 65h12v12H22z" fill="#d9ad5f"/>
-  <path d="M62 65h12v12H62z" fill="#8bdd78"/>
-  <path d="M9 64h10v10H9z" fill="#ff6548"/>
-  <path d="M77 69h10v10H77z" fill="#68a0ff"/>
+
+  <g data-part="open-plate" fill="none" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M78 57V31L63 14H33L14 33V63L33 82H57" stroke="#273247" stroke-width="11"/>
+    <path d="M78 57V31L63 14H33L14 33V63L33 82H57" stroke="#68a0ff" stroke-width="4"/>
+    <path d="M78 57V31L63 14H33L14 33V63L33 82H57" stroke="#b4d2ff" stroke-width="1.5"/>
+  </g>
+
+  <g data-part="four-tine-fork">
+    <path d="M28 27V45" stroke="#ff6b43" stroke-width="7"/>
+    <path d="M40 27V47" stroke="#8bb2ff" stroke-width="7"/>
+    <path d="M52 27V47" stroke="#d9ad5f" stroke-width="7"/>
+    <path d="M64 27V45" stroke="#8bdd78" stroke-width="7"/>
+    <path d="M28 43H68V49L56 58H52V78H44V58H40L28 49Z" fill="#b4d2ff"/>
+    <rect x="44" y="75" width="8" height="9" fill="#f3f6fa"/>
+  </g>
+
+  <rect x="74" y="53" width="8" height="8" fill="#ff6548"/>
+  <rect x="53" y="78" width="8" height="8" fill="#ff6548"/>
 </svg>
