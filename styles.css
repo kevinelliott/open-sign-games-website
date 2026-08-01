@@ -153,10 +153,6 @@ svg {
   align-items: center;
   display: inline-flex;
   font-family: var(--display);
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  line-height: 0.88;
   text-decoration: none;
   text-transform: uppercase;
   width: max-content;
@@ -168,6 +164,27 @@ svg {
   height: 44px;
   margin-right: 13px;
   width: 44px;
+}
+
+.brand-wordmark {
+  display: grid;
+  line-height: 1;
+}
+
+.brand-wordmark strong {
+  color: var(--paper);
+  font-size: 1.38rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  line-height: 0.8;
+}
+
+.brand-wordmark small {
+  color: var(--cobalt-bright);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.19em;
+  margin-top: 7px;
 }
 
 .site-nav {
@@ -459,20 +476,31 @@ svg {
 }
 
 .group-sign img {
-  filter: drop-shadow(0 0 14px rgba(104, 160, 255, 0.3));
-  height: clamp(40px, 4vw, 64px);
-  width: clamp(40px, 4vw, 64px);
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.48));
+  height: clamp(56px, 5vw, 76px);
+  width: clamp(56px, 5vw, 76px);
 }
 
-.group-sign span {
-  color: var(--cobalt-bright);
+.group-wordmark {
+  display: grid;
   font-family: var(--display);
-  font-size: clamp(1.5rem, 2.7vw, 3.4rem);
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  line-height: 1;
-  text-shadow: 0 0 7px rgba(104, 160, 255, 0.6), 0 7px 20px rgba(37, 81, 164, 0.35);
   text-transform: uppercase;
+}
+
+.group-wordmark strong {
+  color: var(--paper);
+  font-size: clamp(3rem, 4.4vw, 5.4rem);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 0.72;
+}
+
+.group-wordmark small {
+  color: var(--cobalt-bright);
+  font-size: clamp(0.76rem, 1vw, 1.05rem);
+  font-weight: 600;
+  letter-spacing: 0.29em;
+  margin-top: 12px;
 }
 
 .facades {
@@ -1180,7 +1208,8 @@ svg {
 }
 
 @media (max-width: 620px) {
-  .brand span { font-size: 0.88rem; }
+  .brand-wordmark strong { font-size: 1.12rem; }
+  .brand-wordmark small { font-size: 0.58rem; margin-top: 5px; }
   .brand-mark { height: 34px; width: 34px; }
   .header-action { display: none; }
 
@@ -1194,10 +1223,10 @@ svg {
   .hero-intro { max-width: 35ch; }
   .shift-control { margin-top: 42px; }
 
-  .group-sign span {
-    font-size: clamp(1.25rem, 6vw, 1.9rem);
-    letter-spacing: 0.045em;
-  }
+  .group-sign { gap: 10px; }
+  .group-sign img { height: 48px; width: 48px; }
+  .group-wordmark strong { font-size: clamp(2.2rem, 11vw, 3rem); }
+  .group-wordmark small { font-size: 0.65rem; letter-spacing: 0.2em; margin-top: 8px; }
 
   .group-circuit { left: 1%; width: 98%; }
 

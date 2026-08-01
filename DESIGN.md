@@ -125,6 +125,11 @@ legible at small sizes and in dense factual passages.
 
 ### Hierarchy
 
+- **House wordmark** (700, `1.12rem`–`1.38rem` in the header,
+  `clamp(2.2rem, 11vw, 3rem)` mobile and `clamp(3rem, 4.4vw, 5.4rem)` at sign
+  scale): the Open Sign name, always visually dominant.
+- **House signature** (600, `0.58rem`–`1.05rem`, 0.19em–0.29em, uppercase):
+  Restaurant Group beneath the wordmark.
 - **Display** (600, `clamp(3rem, 4.4vw, 5.6rem)`, 0.9): homepage thesis and
   major section statements.
 - **Chapter** (600, `clamp(4rem, 7vw, 6rem)`, 0.9): game names at chapter scale.
@@ -176,12 +181,12 @@ and grounded spatial depth rather than sketch illustration or generic key art.
 
 ### Group identity mark
 
-- **Structure:** an open, plate-shaped cobalt circuit encloses a four-tined fork.
-  Each tine carries one restaurant color; two warm electrodes terminate the
-  broken perimeter. The food symbol reads first, while the open circuit keeps
-  the group-level sign language.
-- **Behavior:** the silhouette stays identical at favicon, header, and group-sign
-  scale; the wordmark remains live HTML rather than text baked into the asset.
+- **Structure:** a bold OS house monogram sits above a disciplined four-color
+  restaurant rail. The accompanying wordmark makes **Open Sign** dominant and
+  sets **Restaurant Group** as the institutional signature rather than treating
+  the identity as an illustrative icon.
+- **Behavior:** the monogram stays identical at favicon, header, and group-sign
+  scale; the two-level wordmark remains live HTML for responsive clarity.
 
 ### Primary links
 

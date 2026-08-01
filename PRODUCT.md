@@ -76,8 +76,8 @@ notched-corner motif, accessibility primitives, and truthful ownership language.
 Each restaurant keeps its own visual identity, topology, tempo, and cultural
 ornament.
 
-The group mark is an open neon plate surrounding a four-tined restaurant fork:
-one shared current, four distinct restaurant worlds. Each façade previews its
+The group identity is a bold OS house monogram and typographic restaurant-group
+lockup: one house, four distinct restaurant worlds. Each façade previews its
 chapter-scale environment through the same unobstructed full-bleed frame,
 creating continuity without flattening the four identities. As the desktop
 viewport grows, the four artwork frames expand together while the supporting

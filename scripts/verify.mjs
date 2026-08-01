@@ -79,8 +79,11 @@ if (!blockStageRule.includes("grid-template-rows: 118px minmax(300px, 1fr) auto"
 if (!html.includes("assets/open-sign-mark.svg")) fail("group identity mark is missing");
 
 const mark = read("assets/open-sign-mark.svg");
-if (!mark.includes('data-part="open-plate"') || !mark.includes('data-part="four-tine-fork"')) {
-  fail("group mark must combine the open plate and four-tine restaurant fork");
+if (!mark.includes('data-part="os-monogram"') || !mark.includes('data-part="restaurant-color-rule"')) {
+  fail("group mark must combine the OS house monogram and restaurant color rule");
+}
+if (!html.includes('class="brand-wordmark"') || !html.includes('class="group-wordmark"')) {
+  fail("bold restaurant-group wordmark lockups are missing");
 }
 
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
