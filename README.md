@@ -19,11 +19,23 @@ Run the dependency-free source verification with:
 node scripts/verify.mjs
 ```
 
-## Deploy
+## Deploy to Cloudflare Pages
 
-The repository is ready for GitHub Pages. Configure Pages to deploy from the
-repository branch and root directory; `index.html` is the entry point and
-`.nojekyll` keeps the published output untouched.
+Stage only the browser runtime files, then deploy the generated directory:
+
+```sh
+node scripts/stage-cloudflare.mjs
+npx wrangler pages deploy .cloudflare-dist \
+  --project-name open-sign-restaurant-group \
+  --branch main
+```
+
+The production project uses `opensign.rest` as its custom domain. The staged
+artifact includes Cloudflare Pages security headers but excludes repository
+documentation, design records, and verification tooling.
+
+The repository also remains compatible with GitHub Pages from the repository
+root; `.nojekyll` keeps that published output untouched.
 
 ## Project structure
 

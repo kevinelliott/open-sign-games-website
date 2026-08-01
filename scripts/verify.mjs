@@ -13,6 +13,7 @@ const css = read("styles.css");
 const script = read("script.js");
 const design = read("DESIGN.md");
 const designSidecar = JSON.parse(read(".impeccable/design.json"));
+const cloudflareHeaders = read("_headers");
 
 if (!html.startsWith("<!doctype html>")) fail("index.html must use the HTML5 doctype");
 if (!html.includes("<title>Open Sign Restaurant Group</title>")) fail("page title is not exact");
@@ -122,6 +123,10 @@ if (!css.includes("prefers-reduced-motion: reduce")) fail("reduced-motion suppor
 if (!css.includes("@media (max-width: 620px)")) fail("small-screen layout is missing");
 if (!design.includes("Creative North Star")) fail("DESIGN.md is missing its north star");
 if (designSidecar.schemaVersion !== 2) fail("design sidecar must use schemaVersion 2");
+if (!cloudflareHeaders.includes("Content-Security-Policy:") ||
+    !cloudflareHeaders.includes("X-Content-Type-Options: nosniff")) {
+  fail("Cloudflare Pages security headers are incomplete");
+}
 
 new vm.Script(script, { filename: "script.js" });
 
