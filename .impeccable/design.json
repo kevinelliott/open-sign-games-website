@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-01T04:51:16Z",
+  "title": "Design System: Open Sign Restaurant Group",
+  "extensions": {
+    "colorMeta": {
+      "night-ink": { "role": "neutral", "displayName": "Night Ink", "canonical": "#05070a", "tonalRamp": ["#05070a", "#0c1119", "#172131", "#26354e", "#3e5578", "#647fa8", "#9eb4cf", "#eaf1f8"] },
+      "cobalt-current": { "role": "primary", "displayName": "Cobalt Current", "canonical": "#68a0ff", "tonalRamp": ["#071226", "#0b2450", "#123f86", "#1e5ec0", "#3c7fe8", "#68a0ff", "#a9caff", "#eaf3ff"] },
+      "electrode-red": { "role": "secondary", "displayName": "Electrode Red", "canonical": "#ff6548", "tonalRamp": ["#2a0905", "#57160d", "#8c2819", "#c43d28", "#eb5038", "#ff8068", "#ffb7aa", "#fff0ec"] },
+      "cantina-coral": { "role": "tertiary", "displayName": "Cantina Coral", "canonical": "#ff6b43", "tonalRamp": ["#2c0b05", "#58190f", "#8c2d1b", "#c44529", "#ed5937", "#ff8767", "#ffbca9", "#fff0eb"] },
+      "sushi-blue": { "role": "tertiary", "displayName": "Sushi Blue", "canonical": "#8bb2ff", "tonalRamp": ["#091326", "#112750", "#1d4384", "#3264ba", "#5a8be6", "#8bb2ff", "#bed3ff", "#edf4ff"] },
+      "baron-brass": { "role": "tertiary", "displayName": "Baron Brass", "canonical": "#d9ad5f", "tonalRamp": ["#241805", "#49310c", "#74501a", "#a4752d", "#c99545", "#d9ad5f", "#ecd09a", "#fbf2dc"] },
+      "signal-green": { "role": "tertiary", "displayName": "Signal Green", "canonical": "#8bdd78", "tonalRamp": ["#0a2008", "#173f13", "#286420", "#3d8d31", "#5dbb4d", "#8bdd78", "#bfeeb3", "#effbea"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Fabricated Display", "purpose": "Group thesis, game names, sign lettering, and large section statements." },
+      "body": { "displayName": "High-Legibility Body", "purpose": "Explanatory product truth and longer reading." },
+      "label": { "displayName": "Hardware Label", "purpose": "Controls, status, verbs, and readouts." }
+    },
+    "shadows": [
+      { "name": "lit-glass", "value": "0 0 7px rgba(104, 160, 255, 0.6), 0 7px 20px rgba(37, 81, 164, 0.35)", "purpose": "Optical glow and offset depth for visibly lit cobalt sign glass only." },
+      { "name": "awning-drop", "value": "0 9px 20px rgba(0, 0, 0, 0.5)", "purpose": "Physical shadow below the Dos Esposas awning." }
+    ],
+    "motion": [
+      { "name": "current-travel", "value": "680ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "One bounded circuit-current replay when the selected restaurant changes." }
+    ],
+    "breakpoints": [
+      { "name": "wide", "value": "1180px" },
+      { "name": "tablet", "value": "900px" },
+      { "name": "small", "value": "620px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Link",
+      "kind": "button",
+      "refersTo": "primary-link",
+      "description": "Text-led group action with a cobalt rule and authored arrow.",
+      "html": "<a class=\"ds-primary-link\" href=\"#\">EXPLORE THE RESTAURANTS <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h13m-5-5 5 5-5 5\"/></svg></a>",
+      "css": ".ds-primary-link{align-items:center;border-bottom:1px solid #68a0ff;color:#f3f6fa;display:inline-flex;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-size:1.05rem;font-weight:600;gap:10px;letter-spacing:.08em;padding:12px 0;text-decoration:none}.ds-primary-link svg{fill:none;height:20px;stroke:currentColor;stroke-width:1.8;width:20px}.ds-primary-link:hover{color:#b4d2ff}.ds-primary-link:focus-visible{outline:3px solid #f3f6fa;outline-offset:4px}"
+    },
+    {
+      "name": "Shift Selector",
+      "kind": "nav",
+      "description": "Explicit restaurant preview state that remains a working chapter link.",
+      "html": "<a class=\"ds-shift is-active\" href=\"#\"><i></i><span>DOS ESPOSAS</span><small>SELECTED</small></a>",
+      "css": ".ds-shift{align-items:center;color:#a9b3c4;display:grid;font-family:'Barlow Condensed','Arial Narrow',sans-serif;gap:10px;grid-template-columns:10px 1fr auto;letter-spacing:.055em;min-height:44px;text-decoration:none}.ds-shift i{background:#ff6b43;height:7px;width:7px}.ds-shift small{color:#728097}.ds-shift.is-active,.ds-shift:hover{color:#f3f6fa}.ds-shift.is-active small{color:#b4d2ff}.ds-shift:focus-visible{outline:3px solid #f3f6fa;outline-offset:4px}"
+    },
+    {
+      "name": "Status Label",
+      "kind": "chip",
+      "refersTo": "status-label",
+      "description": "Square textual project status with color as reinforcement only.",
+      "html": "<span class=\"ds-status\">PRODUCT FOUNDATION</span>",
+      "css": ".ds-status{border:1px solid #526078;color:#a9b3c4;display:inline-block;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.11em;padding:8px 10px;text-transform:uppercase}"
+    },
+    {
+      "name": "Facade Bay",
+      "kind": "custom",
+      "description": "Stable square restaurant bay with a sign, title-native geometric scene, and verb rail.",
+      "html": "<a class=\"ds-facade is-active\" href=\"#\"><strong>DOS ESPOSAS</strong><span>COMPOSE / COOK / INSPECT</span></a>",
+      "css": ".ds-facade{background:#090d14;border:1px solid #2b3545;color:#a9b3c4;display:grid;font-family:'Barlow Condensed','Arial Narrow',sans-serif;min-height:180px;padding:18px;text-decoration:none}.ds-facade strong{color:#ff6b43;font-size:1.8rem;letter-spacing:.035em}.ds-facade span{align-self:end;border-top:1px solid #2b3545;font-size:.72rem;letter-spacing:.09em;padding-top:12px}.ds-facade.is-active{background:#421b17;color:#f3f6fa;outline:1px solid #ff6b43;outline-offset:-8px}.ds-facade:focus-visible{outline:3px solid #f3f6fa;outline-offset:4px}"
+    },
+    {
+      "name": "Circuit Console",
+      "kind": "custom",
+      "description": "Active restaurant fantasy and factual readout on raised enamel.",
+      "html": "<section class=\"ds-console\"><small>ACTIVE BUILD</small><h2>DOS ESPOSAS</h2><p>Compose ingredients, commit a kitchen action, then inspect the exact result.</p></section>",
+      "css": ".ds-console{background:#090d14;border:1px solid #2b3545;color:#f3f6fa;font-family:'Atkinson Hyperlegible',Arial,sans-serif;padding:22px 34px}.ds-console small{color:#ff6b43;font-family:'Barlow Condensed','Arial Narrow',sans-serif;letter-spacing:.1em}.ds-console h2{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-size:2.8rem;line-height:.95;margin:5px 0 10px}.ds-console p{color:#a9b3c4;margin:0;max-width:50ch}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Block, Wired as One Hand-Bent Neon Circuit",
+    "overview": "The system is an after-hours publisher threshold for four restaurant-game worlds. Ink-black enamel, exposed sign hardware, cobalt glass current, and warm electrode endpoints create the family identity. The design is restrained in chrome and expressive in subject matter, using flat countable geometry and precise typography rather than photorealism or generic game cards.",
+    "keyCharacteristics": [
+      "Stable block topology with four structurally different doors.",
+      "Functional neon current used for selection and state.",
+      "Square enamel surfaces, one-pixel dividers, and visible hardware.",
+      "Condensed display lettering paired with high-legibility body copy.",
+      "Game color belongs to a restaurant; cobalt belongs to the group circuit."
+    ],
+    "rules": [
+      { "name": "The Circuit Ownership Rule", "body": "Cobalt identifies the group circuit; restaurant accents identify their own door and proof.", "section": "colors" },
+      { "name": "The Fabricated Letter Rule", "body": "Uppercase tracked display text belongs to labels and sign hardware; paragraphs use sentence case.", "section": "typography" },
+      { "name": "The Enamel-First Rule", "body": "Establish hierarchy with tone, border, and overlap; glow belongs only to something visibly lit.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the four doors stable while state and information change.",
+      "Do use game color locally and cobalt for shared circuitry.",
+      "Do preserve text equivalents for status, motion, and color-coded state.",
+      "Do author icons and diagrams as crisp SVG or CSS geometry.",
+      "Do keep source and availability language exact and repository-backed."
+    ],
+    "donts": [
+      "Don't replace the block with a generic hero and equal feature-card grid.",
+      "Don't introduce rounded cards, glassmorphism, gradients, token tickers, or ambient neon around unlit objects.",
+      "Don't reuse one game's topology, instrument, cultural ornament, or tempo for another.",
+      "Don't turn ownership into the primary action or imply investment value.",
+      "Don't invent locations, hours, launch dates, testimonials, or playable availability."
+    ]
+  }
+}
