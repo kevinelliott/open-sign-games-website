@@ -185,8 +185,10 @@ and grounded spatial depth rather than sketch illustration or generic key art.
   restaurant rail. The accompanying wordmark makes **Open Sign** dominant and
   sets **Restaurant Group** as the institutional signature rather than treating
   the identity as an illustrative icon.
-- **Behavior:** the monogram stays identical at favicon, header, and group-sign
-  scale; the two-level wordmark remains live HTML for responsive clarity.
+- **Behavior:** the OS monogram anchors the site header and favicon. At the
+  restaurant threshold, the two-level wordmark becomes a centered enamel plaque
+  that cleanly interrupts the circuit rail; this keeps the large identity part
+  of the architecture instead of floating over it.
 
 ### Primary links
 

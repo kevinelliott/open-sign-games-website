@@ -86,6 +86,12 @@ if (!html.includes('class="brand-wordmark"') || !html.includes('class="group-wor
   fail("bold restaurant-group wordmark lockups are missing");
 }
 
+const groupSignMarkup = html.match(/<div class="group-sign"[^>]*>([\s\S]*?)<\/div>/)?.[1] ?? "";
+const groupSignRule = css.match(/\.group-sign\s*\{([^}]*)\}/)?.[1] ?? "";
+if (groupSignMarkup.includes("<img") || !groupSignRule.includes("background: var(--ink)")) {
+  fail("threshold identity must be an integrated wordmark plaque, not a floating icon lockup");
+}
+
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
 const duplicateIds = ids.filter((id, index) => ids.indexOf(id) !== index);
 if (duplicateIds.length) fail(`duplicate IDs: ${[...new Set(duplicateIds)].join(", ")}`);
