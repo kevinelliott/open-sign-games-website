@@ -54,6 +54,23 @@ if (facadeArtRule.includes("transform:")) {
   fail("façade artwork state must not change image scale");
 }
 
+for (const overlay of [
+  "awning",
+  "facade-mullion",
+  "noren",
+  "baron-arch",
+  "signal-lamps",
+  "dispatch-window",
+]) {
+  if (html.includes(`class="${overlay}`)) {
+    fail(`façade artwork must remain unobstructed: ${overlay}`);
+  }
+}
+
+if (!facadeArtRule.includes("object-fit: cover") || !facadeArtRule.includes("object-position: center")) {
+  fail("façade artwork needs one shared centered cover crop");
+}
+
 if (!html.includes("assets/open-sign-mark.svg")) fail("group identity mark is missing");
 
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);

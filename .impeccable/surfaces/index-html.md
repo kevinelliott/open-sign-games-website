@@ -45,10 +45,10 @@ photorealistic surfaces are explicitly not approved content.
 | Group identity | Open-circuit mark carrying four restaurant colors at favicon, header, and sign scale | Authored SVG |
 | Continuous sign circuit | Cobalt tube, visible bridge hardware, warm electrode endpoints; functional selection state | Authored inline SVG/CSS |
 | Stable four-door block | Four equal bays always visible on desktop; each previews its full chapter world through a deliberate crop | Semantic HTML/CSS + optimized WebP |
-| Dos Esposas | Warm cantina room behind a striped storefront awning, compose/cook/inspect | HTML/CSS + optimized WebP |
-| Samurai Sushi | Moonlit counter behind a three-panel noren, prepare/plate/serve | HTML/CSS + optimized WebP |
-| The Tender Baron | Coal hearth framed by a tall theatre-of-service arch, rake/rest/carve | HTML/CSS + optimized WebP |
-| Fry Signal | Three routing lanes behind signal lamps and a dispatch window, forecast/route/dispatch | HTML/CSS + optimized WebP |
+| Dos Esposas | Unobstructed full-bleed cantina room, compose/cook/inspect | HTML/CSS + optimized WebP |
+| Samurai Sushi | Unobstructed full-bleed moonlit counter, prepare/plate/serve | HTML/CSS + optimized WebP |
+| The Tender Baron | Unobstructed full-bleed coal hearth, rake/rest/carve | HTML/CSS + optimized WebP |
+| Fry Signal | Unobstructed full-bleed routing kitchen, forecast/route/dispatch | HTML/CSS + optimized WebP |
 | Active workbench | Selected game's fantasy, verbs, pace, pressure, signature interaction, honest status | Semantic HTML/CSS/JS progressive enhancement |
 | Restaurant chapters | Four structurally distinct editorial sections with high-detail, title-specific pixel-art environments | Semantic HTML/CSS + optimized WebP |
 | Standards and close | Four play-first standards, compact status/contact close, internal chapter links | Semantic HTML/CSS |

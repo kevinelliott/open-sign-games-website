@@ -584,40 +584,16 @@ svg {
   height: 100%;
   inset: 0;
   object-fit: cover;
+  object-position: center;
   position: absolute;
   transition: filter 240ms ease;
   width: 100%;
 }
 
-.facade-dos .facade-art { object-position: 49% 54%; }
-.facade-samurai .facade-art { object-position: 50% 56%; }
-.facade-tender .facade-art { object-position: 50% 47%; }
-.facade-fry .facade-art { object-position: 53% 47%; }
-
 .facade.is-active .facade-art,
 .facade:hover .facade-art,
 .facade:focus-visible .facade-art {
   filter: brightness(0.86) saturate(1.02);
-}
-
-.facade-mullion {
-  background: color-mix(in srgb, var(--game-deep) 88%, var(--ink));
-  bottom: 8px;
-  left: 50%;
-  pointer-events: none;
-  position: absolute;
-  top: 8px;
-  width: 8px;
-  z-index: 3;
-}
-
-.facade-mullion::after {
-  border-top: 8px solid color-mix(in srgb, var(--game-deep) 88%, var(--ink));
-  content: "";
-  left: calc(-50vw + 4px);
-  position: absolute;
-  right: calc(-50vw + 4px);
-  top: 58%;
 }
 
 .facade-label {
@@ -643,93 +619,6 @@ svg {
   color: var(--line-strong);
   content: "/";
   margin-right: 7px;
-}
-
-.awning {
-  box-shadow: 0 9px 20px rgba(0, 0, 0, 0.5);
-  display: flex;
-  height: 28px;
-  left: 8px;
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  z-index: 5;
-}
-
-.awning i {
-  background: var(--dos);
-  flex: 1;
-}
-
-.awning i:nth-child(even) {
-  background: color-mix(in srgb, var(--dos) 50%, var(--ink));
-}
-
-.noren {
-  display: flex;
-  height: 54px;
-  left: 8px;
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  z-index: 5;
-}
-
-.noren i {
-  background: color-mix(in srgb, var(--samurai-deep) 88%, var(--ink));
-  border-bottom: 2px solid var(--samurai);
-  flex: 1;
-}
-
-.noren i + i { border-left: 1px solid #344b6f; }
-
-.baron-arch {
-  border: 12px solid color-mix(in srgb, var(--tender-deep) 82%, var(--ink));
-  border-bottom: 0;
-  border-radius: 50% 50% 0 0;
-  height: 88%;
-  left: 8px;
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  z-index: 5;
-}
-
-.signal-lamps {
-  display: flex;
-  gap: 9px;
-  left: 50%;
-  position: absolute;
-  top: 18px;
-  transform: translateX(-50%);
-  z-index: 5;
-}
-
-.signal-lamps i {
-  background: var(--ink);
-  border: 2px solid #55715e;
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.65);
-  height: 20px;
-  width: 20px;
-}
-
-.signal-lamps i:first-child { background: var(--warm); border-color: var(--warm); }
-.facade-fry.is-active .signal-lamps i:nth-child(2),
-.facade-fry:hover .signal-lamps i:nth-child(2),
-.facade-fry:focus-visible .signal-lamps i:nth-child(2) {
-  background: var(--fry);
-  border-color: var(--fry);
-  box-shadow: 0 0 9px color-mix(in srgb, var(--fry) 70%, transparent), 0 7px 18px rgba(0, 0, 0, 0.55);
-}
-
-.dispatch-window {
-  border: 8px solid color-mix(in srgb, var(--fry-deep) 86%, var(--ink));
-  bottom: 8px;
-  height: 54%;
-  position: absolute;
-  right: 8px;
-  width: 38%;
-  z-index: 5;
 }
 
 .signal-console {
