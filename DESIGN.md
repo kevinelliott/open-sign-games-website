@@ -125,11 +125,11 @@ legible at small sizes and in dense factual passages.
 
 ### Hierarchy
 
-- **House wordmark** (700, `1.12rem`–`1.38rem` in the header,
-  `clamp(2.2rem, 11vw, 3rem)` mobile and `clamp(3rem, 4.4vw, 5.4rem)` at sign
-  scale): the Open Sign name, always visually dominant.
-- **House signature** (600, `0.58rem`–`1.05rem`, 0.19em–0.29em, uppercase):
-  Restaurant Group beneath the wordmark.
+- **House wordmark** (700, `1.12rem`–`1.38rem` in the header and
+  `clamp(1.8rem, 3.25vw, 4rem)` at threshold scale): the Open Sign name, always
+  visually dominant with the same 0.025em tracking and 0.8 line height.
+- **House signature** (600, `0.58rem`–`0.9rem`, 0.19em, uppercase): Restaurant
+  Group beneath the wordmark with unchanged proportions at every scale.
 - **Display** (600, `clamp(3rem, 4.4vw, 5.6rem)`, 0.9): homepage thesis and
   major section statements.
 - **Chapter** (600, `clamp(4rem, 7vw, 6rem)`, 0.9): game names at chapter scale.
@@ -181,14 +181,14 @@ and grounded spatial depth rather than sketch illustration or generic key art.
 
 ### Group identity mark
 
-- **Structure:** a bold OS house monogram sits above a disciplined four-color
-  restaurant rail. The accompanying wordmark makes **Open Sign** dominant and
-  sets **Restaurant Group** as the institutional signature rather than treating
-  the identity as an illustrative icon.
-- **Behavior:** the OS monogram anchors the site header and favicon. At the
-  restaurant threshold, the two-level wordmark becomes a centered enamel plaque
-  that cleanly interrupts the circuit rail; this keeps the large identity part
-  of the architecture instead of floating over it.
+- **Structure:** one canonical horizontal lockup places the bold OS house
+  monogram beside a two-level wordmark. **Open Sign** is dominant and
+  **Restaurant Group** is the institutional signature. The mark, typography,
+  tracking, and proportions do not change between placements.
+- **Behavior:** the same lockup appears at compact header scale and larger
+  threshold scale. The editorial rail begins with the page thesis instead of
+  repeating the company name as a third treatment. Two independent circuit
+  segments terminate beside the threshold plate; no line passes behind it.
 
 ### Primary links
 

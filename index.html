@@ -21,8 +21,8 @@
       content="default-src 'self'; base-uri 'self'; connect-src 'none'; font-src 'self'; form-action 'self'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self'"
     />
     <title>Open Sign Restaurant Group</title>
-    <link rel="icon" href="favicon.svg?v=bold-house-wordmark" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=integrated-threshold-sign" />
+    <link rel="icon" href="favicon.svg?v=canonical-house-lockup" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=canonical-house-lockup" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -38,8 +38,10 @@
 
     <header class="site-header" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="Open Sign Restaurant Group, home">
-        <img class="brand-mark" src="assets/open-sign-mark.svg?v=bold-house-wordmark" alt="" />
-        <span class="brand-wordmark"><strong>Open Sign</strong><small>Restaurant Group</small></span>
+        <span class="brand-lockup">
+          <img class="brand-lockup__mark" src="assets/open-sign-mark.svg?v=canonical-house-lockup" alt="" />
+          <span class="brand-lockup__type"><strong>Open Sign</strong><small>Restaurant Group</small></span>
+        </span>
       </a>
       <nav class="site-nav" aria-label="Site sections">
         <a href="#restaurants">Restaurants</a>
@@ -53,8 +55,7 @@
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-rail">
           <div>
-            <p class="group-name" id="hero-title">Open Sign<br />Restaurant Group</p>
-            <h1>Four restaurants.<br />Four ways to play.</h1>
+            <h1 id="hero-title">Four restaurants.<br />Four ways to play.</h1>
             <p class="hero-intro">
               Handcrafted pixel restaurant games where every kitchen asks
               something different of you.
@@ -117,18 +118,15 @@
         </div>
 
         <div class="block-stage" aria-label="Four restaurant game façades">
-          <svg class="group-circuit" viewBox="0 0 1200 84" preserveAspectRatio="none" aria-hidden="true">
-            <path class="circuit-rail" d="M24 62V28h1140v34" />
-            <path class="circuit-current" d="M24 62V28h1140v34" />
-            <g class="circuit-clamps">
-              <path d="M140 18v20m-8-10h16M390 18v20m-8-10h16M650 18v20m-8-10h16M910 18v20m-8-10h16" />
-            </g>
-            <circle class="electrode" cx="24" cy="62" r="7" />
-            <circle class="electrode" cx="1164" cy="62" r="7" />
-          </svg>
-
-          <div class="group-sign" aria-hidden="true">
-            <span class="group-wordmark"><strong>Open Sign</strong><small>Restaurant Group</small></span>
+          <div class="threshold-header" aria-hidden="true">
+            <span class="threshold-wire threshold-wire--left"></span>
+            <div class="threshold-sign">
+              <span class="brand-lockup brand-lockup--threshold">
+                <img class="brand-lockup__mark" src="assets/open-sign-mark.svg?v=canonical-house-lockup" alt="" />
+                <span class="brand-lockup__type"><strong>Open Sign</strong><small>Restaurant Group</small></span>
+              </span>
+            </div>
+            <span class="threshold-wire threshold-wire--right"></span>
           </div>
 
           <div class="facades">

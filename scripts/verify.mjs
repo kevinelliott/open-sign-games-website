@@ -72,7 +72,7 @@ if (!facadeArtRule.includes("object-fit: cover") || !facadeArtRule.includes("obj
 }
 
 const blockStageRule = css.match(/\.block-stage\s*\{([^}]*)\}/)?.[1] ?? "";
-if (!blockStageRule.includes("grid-template-rows: 118px minmax(300px, 1fr) auto")) {
+if (!blockStageRule.includes("grid-template-rows: minmax(112px, auto) minmax(300px, 1fr) auto")) {
   fail("desktop stage must give surplus viewport height to façade artwork only");
 }
 
@@ -82,14 +82,15 @@ const mark = read("assets/open-sign-mark.svg");
 if (!mark.includes('data-part="os-monogram"') || !mark.includes('data-part="restaurant-color-rule"')) {
   fail("group mark must combine the OS house monogram and restaurant color rule");
 }
-if (!html.includes('class="brand-wordmark"') || !html.includes('class="group-wordmark"')) {
-  fail("bold restaurant-group wordmark lockups are missing");
+const lockupCount = [...html.matchAll(/class="[^"]*\bbrand-lockup\b[^"]*"/g)].length;
+if (lockupCount !== 2 || html.includes('class="group-name"')) {
+  fail("the canonical house lockup must appear exactly in the nav and threshold");
 }
 
-const groupSignMarkup = html.match(/<div class="group-sign"[^>]*>([\s\S]*?)<\/div>/)?.[1] ?? "";
-const groupSignRule = css.match(/\.group-sign\s*\{([^}]*)\}/)?.[1] ?? "";
-if (groupSignMarkup.includes("<img") || !groupSignRule.includes("background: var(--ink)")) {
-  fail("threshold identity must be an integrated wordmark plaque, not a floating icon lockup");
+if (!html.includes('class="threshold-wire threshold-wire--left"') ||
+    !html.includes('class="threshold-wire threshold-wire--right"') ||
+    html.includes('class="group-circuit"')) {
+  fail("threshold rails must terminate independently beside the canonical lockup");
 }
 
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);

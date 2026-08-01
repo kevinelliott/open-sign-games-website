@@ -76,8 +76,10 @@ notched-corner motif, accessibility primitives, and truthful ownership language.
 Each restaurant keeps its own visual identity, topology, tempo, and cultural
 ornament.
 
-The group identity is a bold OS house monogram and typographic restaurant-group
-lockup: one house, four distinct restaurant worlds. Each façade previews its
+The group identity is one canonical horizontal lockup: a bold OS house monogram
+beside the Open Sign / Restaurant Group wordmark. It appears at compact and
+threshold scales without changing its proportions or typography; the editorial
+rail does not repeat it as a third text treatment. Each façade previews its
 chapter-scale environment through the same unobstructed full-bleed frame,
 creating continuity without flattening the four identities. As the desktop
 viewport grows, the four artwork frames expand together while the supporting
