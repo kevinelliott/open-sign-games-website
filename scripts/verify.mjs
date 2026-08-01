@@ -31,7 +31,14 @@ for (const artwork of [
   "assets/restaurants/tender-baron-hearth.webp",
   "assets/restaurants/fry-signal-kitchen.webp",
 ]) {
-  if (!html.includes(artwork)) fail(`missing restaurant artwork reference: ${artwork}`);
+  const references = html.split(artwork).length - 1;
+  if (references !== 2) {
+    fail(`restaurant artwork must appear once in the façade and once in the chapter: ${artwork}`);
+  }
+}
+
+if ((html.match(/class="facade-art"/g) ?? []).length !== 4) {
+  fail("opening block must contain four restaurant artwork previews");
 }
 
 if (!html.includes("assets/open-sign-mark.svg")) fail("group identity mark is missing");
@@ -77,6 +84,7 @@ console.log(
       runtimeDependencies: 0,
       visitorGithubLinks: 0,
       restaurantArtwork: 4,
+      facadeArtworkPreviews: 4,
       tezosAttribution: "ok",
       scriptSyntax: "ok",
       designSystem: "ok",

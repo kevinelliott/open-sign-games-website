@@ -44,11 +44,11 @@ photorealistic surfaces are explicitly not approved content.
 | Editorial rail | Exact title, two-line thesis, concise intro, primary action, keyboard-readable selector | Semantic HTML/CSS |
 | Group identity | Open-circuit mark carrying four restaurant colors at favicon, header, and sign scale | Authored SVG |
 | Continuous sign circuit | Cobalt tube, visible bridge hardware, warm electrode endpoints; functional selection state | Authored inline SVG/CSS |
-| Stable four-door block | Four equal bays always visible on desktop; each identifiable by topology and label | Semantic HTML/CSS with authored flat SVG details |
-| Dos Esposas | Layered cantina shelves/workbench, lively warm window, compose/cook/inspect | HTML/CSS/SVG |
-| Samurai Sushi | Low counter stage, three preparation zones, quiet navy/indigo | HTML/CSS/SVG |
-| The Tender Baron | Tall theatre-of-service arch, coal/rest/carve geometry, burgundy/brass | HTML/CSS/SVG |
-| Fry Signal | Horizontal routing lanes, signal lamps, drive-through window, green/amber | HTML/CSS/SVG |
+| Stable four-door block | Four equal bays always visible on desktop; each previews its full chapter world through a deliberate crop | Semantic HTML/CSS + optimized WebP |
+| Dos Esposas | Warm cantina room behind a striped storefront awning, compose/cook/inspect | HTML/CSS + optimized WebP |
+| Samurai Sushi | Moonlit counter behind a three-panel noren, prepare/plate/serve | HTML/CSS + optimized WebP |
+| The Tender Baron | Coal hearth framed by a tall theatre-of-service arch, rake/rest/carve | HTML/CSS + optimized WebP |
+| Fry Signal | Three routing lanes behind signal lamps and a dispatch window, forecast/route/dispatch | HTML/CSS + optimized WebP |
 | Active workbench | Selected game's fantasy, verbs, pace, pressure, signature interaction, honest status | Semantic HTML/CSS/JS progressive enhancement |
 | Restaurant chapters | Four structurally distinct editorial sections with high-detail, title-specific pixel-art environments | Semantic HTML/CSS + optimized WebP |
 | Standards and close | Four play-first standards, compact status/contact close, internal chapter links | Semantic HTML/CSS |

@@ -203,10 +203,12 @@ and grounded spatial depth rather than sketch illustration or generic key art.
 
 ### Façades
 
-- **Structure:** four equal bays with a sign, an authored geometric scene, and a
+- **Structure:** four equal bays with a sign, a deliberate crop of the matching
+  restaurant environment, a title-specific architectural overlay, and a
   three-verb label rail.
 - **State:** the selected bay changes its enamel ground and receives a one-pixel
-  inset restaurant-color frame without changing position or size.
+  inset restaurant-color frame while its window brightens without changing
+  position or size.
 
 ### Live circuit console
 
@@ -219,9 +221,11 @@ and grounded spatial depth rather than sketch illustration or generic key art.
 ### Restaurant environment art
 
 - **Structure:** one wide, title-specific pixel-art environment per chapter,
-  paired with a compact verb-and-consequence caption.
-- **Role:** supply material detail, atmosphere, and spatial fantasy while the
-  façade and live console retain the mechanically legible overview.
+  reused as a deliberate storefront crop and paired with a compact
+  verb-and-consequence caption at chapter scale.
+- **Role:** establish continuity from the opening block to each full chapter
+  while the façade overlays and live console retain the mechanically legible
+  overview.
 - **Delivery:** optimized local WebP assets with explicit alt text; no baked-in
   wordmarks, third-party marks, or visitor-facing source links.
 
