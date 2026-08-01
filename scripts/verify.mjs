@@ -41,6 +41,15 @@ if ((html.match(/class="facade-art"/g) ?? []).length !== 4) {
   fail("opening block must contain four restaurant artwork previews");
 }
 
+if (!css.includes("aspect-ratio: 4 / 5") || !css.includes("aspect-ratio: 8 / 5")) {
+  fail("façade artwork needs explicit desktop and responsive window ratios");
+}
+
+const facadeArtRule = css.match(/\.facade-art\s*\{([\s\S]*?)\}/)?.[1] ?? "";
+if (facadeArtRule.includes("transform:")) {
+  fail("façade artwork state must not change image scale");
+}
+
 if (!html.includes("assets/open-sign-mark.svg")) fail("group identity mark is missing");
 
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
@@ -56,7 +65,8 @@ const localReferences = [
   ...css.matchAll(/url\("([^"]+)"\)/g),
 ]
   .map((match) => match[1])
-  .filter((reference) => !reference.startsWith("http") && !reference.startsWith("mailto:"));
+  .filter((reference) => !reference.startsWith("http") && !reference.startsWith("mailto:"))
+  .map((reference) => reference.split(/[?#]/, 1)[0]);
 
 const missingFiles = [...new Set(localReferences)].filter(
   (reference) => !fs.existsSync(path.join(root, reference)),
