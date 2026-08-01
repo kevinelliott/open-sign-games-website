@@ -41,8 +41,12 @@ if ((html.match(/class="facade-art"/g) ?? []).length !== 4) {
   fail("opening block must contain four restaurant artwork previews");
 }
 
-if (!css.includes("aspect-ratio: 4 / 5") || !css.includes("aspect-ratio: 8 / 5")) {
-  fail("façade artwork needs explicit desktop and responsive window ratios");
+if (!css.includes("grid-template-rows: 74px minmax(0, 1fr) 42px")) {
+  fail("façade artwork needs a shared full-height fill track");
+}
+
+if (!css.includes("min-height: 260px") || !css.includes("min-height: 300px")) {
+  fail("façade artwork needs explicit responsive minimum heights");
 }
 
 const facadeArtRule = css.match(/\.facade-art\s*\{([\s\S]*?)\}/)?.[1] ?? "";

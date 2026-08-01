@@ -488,7 +488,7 @@ svg {
   background: var(--ink-raised);
   color: var(--muted);
   display: grid;
-  grid-template-rows: 74px auto 42px;
+  grid-template-rows: 74px minmax(0, 1fr) 42px;
   min-width: 0;
   overflow: hidden;
   position: relative;
@@ -561,9 +561,9 @@ svg {
 }
 
 .facade-scene {
-  aspect-ratio: 4 / 5;
   background: var(--game-deep);
   display: block;
+  min-height: 0;
   overflow: hidden;
   position: relative;
 }
@@ -1235,7 +1235,7 @@ svg {
   .facades { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .facade:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
   .facade:nth-child(4) { border-top: 1px solid var(--line); }
-  .facade-scene { aspect-ratio: 8 / 5; }
+  .facade-scene { min-height: 260px; }
 
   .signal-console {
     grid-template-columns: 140px 1fr;
@@ -1314,7 +1314,7 @@ svg {
 
   .facades { display: block; }
   .facade + .facade { border-left: 0; border-top: 1px solid var(--line); }
-  .facade-scene { aspect-ratio: 8 / 5; }
+  .facade-scene { min-height: 300px; }
   .facade-sign > span { font-size: 2rem; }
 
   .signal-console { grid-template-columns: 1fr; }

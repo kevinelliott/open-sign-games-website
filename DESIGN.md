@@ -205,8 +205,8 @@ and grounded spatial depth rather than sketch illustration or generic key art.
 
 - **Structure:** four equal bays with a sign, a deliberate crop of the matching
   restaurant environment, a title-specific architectural overlay, and a
-  three-verb label rail. Every bay uses the same explicit window ratio at a
-  given breakpoint.
+  three-verb label rail. Every bay uses the same fill track at a given
+  breakpoint, with the artwork covering that track edge to edge.
 - **State:** the selected bay changes its enamel ground and receives a one-pixel
   inset restaurant-color frame while its window brightens. Selection never
   changes image position, scale, or window size.
