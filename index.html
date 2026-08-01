@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Open Sign Restaurant Group presents four distinct pixel restaurant games: Dos Esposas, Samurai Sushi, The Tender Baron, and Fry Signal."
+      content="Open Sign Restaurant Group presents four distinct pixel restaurant games powered by Tezos: Dos Esposas, Samurai Sushi, The Tender Baron, and Fry Signal."
     />
     <meta name="theme-color" content="#05070a" />
     <meta name="color-scheme" content="dark" />
     <meta property="og:title" content="Open Sign Restaurant Group" />
     <meta
       property="og:description"
-      content="Four restaurants. Four ways to play. Meet four handcrafted pixel restaurant games with distinct rhythms, decisions, and worlds."
+      content="Four restaurants. Four ways to play. Meet four handcrafted pixel restaurant games powered by Tezos, a crypto blockchain."
     />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary" />
@@ -38,10 +38,7 @@
 
     <header class="site-header" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="Open Sign Restaurant Group, home">
-        <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
-          <path d="M3 3h24v4h6v26H9v-4H3z" />
-          <path d="M10 11h6v6h-6zm10 0h6v6h-6zm-10 10h6v6h-6zm10 0h6v6h-6z" />
-        </svg>
+        <img class="brand-mark" src="assets/open-sign-mark.svg" alt="" />
         <span>Open Sign<br />Restaurant Group</span>
       </a>
       <nav class="site-nav" aria-label="Site sections">
@@ -131,6 +128,7 @@
           </svg>
 
           <div class="group-sign" aria-hidden="true">
+            <img src="assets/open-sign-mark.svg" alt="" />
             <span>Open Sign Restaurant Group</span>
           </div>
 
@@ -227,6 +225,7 @@
         <p>Play before wallet</p>
         <p>Ownership is optional</p>
         <p>Every onchain action is explained</p>
+        <p><span>Powered by Tezos<small>A crypto blockchain</small></span></p>
       </section>
 
       <section class="restaurant-chapters" id="restaurants" aria-label="The four restaurants">
@@ -251,38 +250,18 @@
               <div><dt>Central decision</dt><dd>What to transform, and with what consequence</dd></div>
               <div><dt>Signature interaction</dt><dd>Compose inputs, then review the exact result</dd></div>
             </dl>
-            <a class="source-link" href="https://github.com/kevinelliott/dos-esposas">View the Dos Esposas source <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16 16 8m-7 0h7v7M16 14v5H5V8h5" /></svg></a>
           </div>
-          <div class="instrument instrument-dos" aria-label="Ingredient composition diagram">
-            <div class="ingredient-stack">
-              <span>Maize</span><span>Heat</span><span>Time</span>
-            </div>
-            <svg viewBox="0 0 360 220" aria-hidden="true">
-              <path d="M66 42v44h98v48h96" />
-              <path d="M66 110h66v24" />
-              <path d="M66 178v-44h66" />
-              <rect x="22" y="22" width="88" height="40" />
-              <rect x="22" y="90" width="88" height="40" />
-              <rect x="22" y="158" width="88" height="40" />
-              <path class="result-shape" d="m266 104 38 22v44l-38 22-38-22v-44z" />
-            </svg>
-            <p><span>Review ready</span> Exact inputs and consequence stay visible.</p>
-          </div>
+          <figure class="restaurant-art" aria-labelledby="dos-art-caption">
+            <img src="assets/restaurants/dos-esposas-kitchen.webp" alt="A richly detailed pixel-art cantina kitchen with tiled hearths, clay cookware, fresh ingredients, and a central preparation counter." loading="lazy" decoding="async" />
+            <figcaption id="dos-art-caption"><strong>Choose · Combine · Cook</strong><span>Every station makes the next consequence legible.</span></figcaption>
+          </figure>
         </article>
 
         <article class="game-chapter chapter-samurai" id="samurai-sushi">
-          <div class="instrument instrument-samurai" aria-label="Sushi preparation sequence diagram">
-            <div class="counter-line">
-              <span><i></i>Rice</span><span><i></i>Knife</span><span><i></i>Form</span><span><i></i>Serve</span>
-            </div>
-            <div class="plate-stage">
-              <span class="plate"></span>
-              <span class="piece piece-one"></span>
-              <span class="piece piece-two"></span>
-              <span class="piece piece-three"></span>
-            </div>
-            <p>One authored plate settles only when sequence and guest attention align.</p>
-          </div>
+          <figure class="restaurant-art" aria-labelledby="samurai-art-caption">
+            <img src="assets/restaurants/samurai-sushi-counter.webp" alt="A moonlit pixel-art sushi counter arranged into precise knife, rice, garnish, plating, and service zones." loading="lazy" decoding="async" />
+            <figcaption id="samurai-art-caption"><strong>Prepare · Plate · Serve</strong><span>Precision becomes hospitality across one quiet counter.</span></figcaption>
+          </figure>
           <div class="chapter-copy">
             <div class="chapter-heading">
               <h2>Samurai Sushi</h2>
@@ -303,7 +282,6 @@
               <div><dt>Central decision</dt><dd>How to sequence craft within a small counter</dd></div>
               <div><dt>Signature interaction</dt><dd>Rice, knife, and forming choreography</dd></div>
             </dl>
-            <a class="source-link" href="https://github.com/kevinelliott/samurai-sushi">View the Samurai Sushi source <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16 16 8m-7 0h7v7M16 14v5H5V8h5" /></svg></a>
           </div>
         </article>
 
@@ -328,30 +306,18 @@
               <div><dt>Central decision</dt><dd>How heat, resting space, and table promises align</dd></div>
               <div><dt>Signature interaction</dt><dd>Rake a readable coal map, then reveal doneness at carving</dd></div>
             </dl>
-            <a class="source-link" href="https://github.com/kevinelliott/the-tender-baron">View The Tender Baron source <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16 16 8m-7 0h7v7M16 14v5H5V8h5" /></svg></a>
           </div>
-          <div class="instrument instrument-tender" aria-label="Coal heat and resting diagram">
-            <div class="coal-map">
-              <i class="coal cold"></i><i class="coal warm"></i><i class="coal hot"></i><i class="coal hot"></i>
-              <i class="coal warm"></i><i class="coal hot"></i><i class="coal hot"></i><i class="coal cold"></i>
-              <i class="coal cold"></i><i class="coal warm"></i><i class="coal warm"></i><i class="coal cold"></i>
-            </div>
-            <div class="resting-path"><span>Sear</span><i></i><span>Rest</span><i></i><span>Carve</span></div>
-            <p>Heat stays legible. Doneness is deterministic. Resting is active planning time.</p>
-          </div>
+          <figure class="restaurant-art" aria-labelledby="tender-art-caption">
+            <img src="assets/restaurants/tender-baron-hearth.webp" alt="A theatrical pixel-art steakhouse hearth with readable coal zones, resting racks, a carving block, and the dining room beyond." loading="lazy" decoding="async" />
+            <figcaption id="tender-art-caption"><strong>Rake · Rest · Carve</strong><span>Fire and service share one deliberate clock.</span></figcaption>
+          </figure>
         </article>
 
         <article class="game-chapter chapter-fry" id="fry-signal">
-          <div class="instrument instrument-fry" aria-label="Drive-through route diagram">
-            <div class="traffic-wave">
-              <span>Setup</span><i></i><span>Rush</span><i></i><span>Recover</span>
-            </div>
-            <div class="lane-board">
-              <span class="lane lane-a"></span><span class="lane lane-b"></span><span class="lane lane-c"></span>
-              <span class="batch-dot"></span><span class="pack-dot"></span><span class="go-dot"></span>
-            </div>
-            <p>Change the route, recover the wrong turn, then light the sign.</p>
-          </div>
+          <figure class="restaurant-art" aria-labelledby="fry-art-caption">
+            <img src="assets/restaurants/fry-signal-kitchen.webp" alt="A late-night pixel-art fried-chicken kitchen with fryer banks, three illuminated routing lanes, packing rails, and a drive-through dispatch window." loading="lazy" decoding="async" />
+            <figcaption id="fry-art-caption"><strong>Forecast · Route · Dispatch</strong><span>Read the wave, change the route, then light the sign.</span></figcaption>
+          </figure>
           <div class="chapter-copy">
             <div class="chapter-heading">
               <h2>Fry Signal</h2>
@@ -372,7 +338,6 @@
               <div><dt>Central decision</dt><dd>How much batch risk and route complexity to carry</dd></div>
               <div><dt>Signature interaction</dt><dd>Rewire the board to send trays toward live order lanes</dd></div>
             </dl>
-            <a class="source-link" href="https://github.com/kevinelliott/fry-signal">View the Fry Signal source <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16 16 8m-7 0h7v7M16 14v5H5V8h5" /></svg></a>
           </div>
         </article>
       </section>
@@ -398,19 +363,19 @@
         <div class="closing-copy">
           <h2 id="closing-title">Pick your shift.</h2>
           <p>
-            These projects are at different stages. Follow the source—not a
-            launch-date promise—for the current state of each restaurant.
+            These projects are at different stages. The status shown here is
+            the current public snapshot—not a launch-date promise.
           </p>
           <p class="contact-note">
-            Direct contact is not currently published; project questions
-            belong in the relevant source repository.
+            Public play and contact destinations will appear here when they are
+            ready. Until then, every door stays honest about its stage.
           </p>
         </div>
         <div class="closing-links">
-          <a href="https://github.com/kevinelliott/dos-esposas"><span>Dos Esposas</span><small>Active build</small></a>
-          <a href="https://github.com/kevinelliott/samurai-sushi"><span>Samurai Sushi</span><small>Specification</small></a>
-          <a href="https://github.com/kevinelliott/the-tender-baron"><span>The Tender Baron</span><small>Product foundation</small></a>
-          <a href="https://github.com/kevinelliott/fry-signal"><span>Fry Signal</span><small>Pre-release build</small></a>
+          <a href="#dos-esposas"><span>Dos Esposas</span><small>Active build</small></a>
+          <a href="#samurai-sushi"><span>Samurai Sushi</span><small>Specification</small></a>
+          <a href="#tender-baron"><span>The Tender Baron</span><small>Product foundation</small></a>
+          <a href="#fry-signal"><span>Fry Signal</span><small>Pre-release build</small></a>
         </div>
       </section>
     </main>
@@ -418,8 +383,7 @@
     <footer class="site-footer">
       <p>© <span id="current-year">2026</span> Open Sign Restaurant Group</p>
       <p>Distinct pixel restaurant games. Play freely. Keep selected souvenirs on your terms.</p>
-      <nav aria-label="Project links">
-        <a href="https://github.com/kevinelliott/open-sign-games-website">Website source</a>
+      <nav aria-label="Footer links">
         <a href="#top">Back to the sign</a>
       </nav>
     </footer>

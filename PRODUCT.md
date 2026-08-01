@@ -16,7 +16,7 @@ step, server, database, wallet, RPC, indexer, or third-party runtime.
 
 Primary visitors are people encountering the four restaurant games for the first
 time. They need to understand the group, distinguish the games quickly, and find
-the truthful current status or source for each title.
+the truthful current status for each title.
 
 Secondary visitors are existing players and wallet-curious community members.
 They need a clear statement that play comes first and any ownership layer is
@@ -43,7 +43,8 @@ visible work, rhythm, and decision rather than merely changing a palette.
 
 The site is a compact public portfolio and status page. Visitors arrive from a
 direct link or repository, move among the four restaurants, inspect their core
-play and development state, and follow project-source links when available.
+play and development state, and return when public play or contact destinations
+become available. The homepage does not link visitors to source repositories.
 
 ## Capabilities and Constraints
 
@@ -55,6 +56,12 @@ play and development state, and follow project-source links when available.
 - The homepage must remain fully usable without JavaScript; JavaScript may add
   progressive interaction only.
 - Deployment target is GitHub Pages from a dependency-free static repository.
+- The public homepage identifies the games as powered by **Tezos**, described in
+  plain language as a crypto blockchain. It makes no broader chain, token,
+  commercial, or investment claim.
+- Visitor-facing links must remain on the public site until a confirmed play or
+  contact destination is approved; source repositories are evidence, not calls
+  to action.
 - No wallet control, token ticker, rarity carousel, roadmap theater, partner-logo
   wall, public ranking, or vague ecosystem claim belongs on this homepage.
 - Each project status must reflect repository evidence. No playable release,
@@ -68,6 +75,10 @@ distinct doors. The shared family traits are deliberate pixel craft, one small
 notched-corner motif, accessibility primitives, and truthful ownership language.
 Each restaurant keeps its own visual identity, topology, tempo, and cultural
 ornament.
+
+The group mark is an open electrical circuit shaped through four colored doors:
+one shared current, four distinct restaurant worlds. Chapter-scale environment
+art supplies the atmosphere and detail that the compact façade diagrams cannot.
 
 The approved homepage thesis is **Four restaurants. Four ways to play.** The
 tone is confident, restrained, warm, and specific. The group introduces; each

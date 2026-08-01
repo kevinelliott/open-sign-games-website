@@ -169,9 +169,17 @@ Corners are square. One-pixel dividers, straight rails, right-angle routes,
 notched silhouettes, exposed clamps, and small electrode squares establish the
 form language. Circles appear only where the subject requires them: lamps,
 coals, plates, or electrical endpoints. Façade scenes and instruments use crisp,
-countable geometry rather than sketch illustration.
+countable geometry. Chapter environments use crisp, high-detail pixel clusters
+and grounded spatial depth rather than sketch illustration or generic key art.
 
 ## Components
+
+### Group identity mark
+
+- **Structure:** one open fabricated frame, one continuous cobalt current, four
+  restaurant-color doors, and two opposing electrodes.
+- **Behavior:** the silhouette stays identical at favicon, header, and group-sign
+  scale; the wordmark remains live HTML rather than text baked into the asset.
 
 ### Primary links
 
@@ -208,12 +216,14 @@ countable geometry rather than sketch illustration.
   `cubic-bezier(0.16, 1, 0.3, 1)`; reduced motion collapses it to an immediate
   state.
 
-### Game instruments
+### Restaurant environment art
 
-Each chapter uses a different countable diagram native to its play: ingredient
-composition, counter choreography, coal/resting map, or routing lanes. These are
-evidence of mechanical difference, not decorative illustrations or reusable
-cards.
+- **Structure:** one wide, title-specific pixel-art environment per chapter,
+  paired with a compact verb-and-consequence caption.
+- **Role:** supply material detail, atmosphere, and spatial fantasy while the
+  façade and live console retain the mechanically legible overview.
+- **Delivery:** optimized local WebP assets with explicit alt text; no baked-in
+  wordmarks, third-party marks, or visitor-facing source links.
 
 ## Do's and Don'ts
 
@@ -223,7 +233,7 @@ cards.
 - **Do** use game color locally and cobalt for shared circuitry.
 - **Do** preserve text equivalents for status, motion, and color-coded state.
 - **Do** author icons and diagrams as crisp SVG or CSS geometry.
-- **Do** keep source and availability language exact and repository-backed.
+- **Do** keep status and availability language exact and internally evidence-backed.
 
 ### Don't:
 

@@ -32,6 +32,8 @@ index.html           semantic content and inline geometric scenes
 styles.css           responsive visual system and authored motion
 script.js            optional progressive restaurant preview controls
 favicon.svg          code-native group mark
+assets/open-sign-mark.svg  scalable group identity mark
+assets/restaurants/  optimized restaurant environment artwork
 assets/fonts/        self-hosted open fonts and their licenses
 ```
 

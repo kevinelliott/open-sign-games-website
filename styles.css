@@ -163,19 +163,11 @@ svg {
 }
 
 .brand-mark {
-  height: 34px;
-  margin-right: 11px;
-  width: 34px;
-}
-
-.brand-mark path:first-child {
-  fill: none;
-  stroke: var(--line-strong);
-  stroke-width: 2;
-}
-
-.brand-mark path:last-child {
-  fill: var(--cobalt);
+  filter: drop-shadow(0 0 10px rgba(104, 160, 255, 0.22));
+  flex: 0 0 auto;
+  height: 44px;
+  margin-right: 13px;
+  width: 44px;
 }
 
 .site-nav {
@@ -269,7 +261,6 @@ svg {
 
 .primary-link,
 .text-link,
-.source-link,
 .console-link {
   align-items: center;
   display: inline-flex;
@@ -457,13 +448,20 @@ svg {
 }
 
 .group-sign {
-  align-items: flex-end;
+  align-items: center;
   display: flex;
+  gap: clamp(10px, 1.5vw, 20px);
   grid-row: 1;
   justify-content: center;
   padding-bottom: 12px;
   position: relative;
   z-index: 5;
+}
+
+.group-sign img {
+  filter: drop-shadow(0 0 14px rgba(104, 160, 255, 0.3));
+  height: clamp(40px, 4vw, 64px);
+  width: clamp(40px, 4vw, 64px);
 }
 
 .group-sign span {
@@ -971,7 +969,7 @@ svg {
 .truth-strip {
   border-bottom: 1px solid var(--line);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin: 0;
   padding: 0 clamp(18px, 4vw, 72px);
 }
@@ -998,6 +996,17 @@ svg {
   content: "";
   height: 8px;
   width: 8px;
+}
+
+.truth-strip small {
+  color: var(--dim);
+  display: block;
+  font-family: var(--body);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-top: 2px;
+  text-transform: none;
 }
 
 .restaurant-chapters {
@@ -1109,229 +1118,51 @@ svg {
 
 .chapter-facts dd { margin: 0; }
 
-.source-link {
-  color: var(--game-color);
-}
-
-.source-link svg {
-  fill: none;
-  height: 18px;
-  stroke: currentColor;
-  stroke-linecap: square;
-  stroke-linejoin: miter;
-  stroke-width: 1.8;
-  width: 18px;
-}
-
-.instrument {
-  align-content: center;
+.restaurant-art {
   background: var(--game-deep);
   border-left: 1px solid var(--line);
   display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  margin: 0;
   min-width: 0;
   overflow: hidden;
-  padding: clamp(32px, 6vw, 100px);
   position: relative;
 }
 
-.game-chapter:nth-child(even) .instrument {
+.game-chapter:nth-child(even) .restaurant-art {
   border-left: 0;
   border-right: 1px solid var(--line);
 }
 
-.instrument > p {
-  color: color-mix(in srgb, var(--game-color) 62%, var(--paper));
-  font-size: 0.95rem;
-  margin: 38px 0 0;
-  max-width: 42ch;
+.restaurant-art img {
+  height: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  width: 100%;
 }
 
-.instrument-dos {
-  grid-template-columns: 116px 1fr;
-  gap: 20px;
-}
-
-.instrument-dos > p { grid-column: 1 / -1; }
-
-.ingredient-stack {
-  display: grid;
-  gap: 28px;
-}
-
-.ingredient-stack span {
-  align-items: center;
-  border: 1px solid #b55d45;
-  display: flex;
-  font-family: var(--display);
-  height: 42px;
-  justify-content: center;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.instrument-dos svg {
-  fill: none;
-  max-width: 100%;
-  stroke: #b7624b;
-  stroke-width: 2;
-}
-
-.instrument-dos .result-shape {
-  fill: rgba(246, 195, 91, 0.12);
-  stroke: var(--warm);
-}
-
-.instrument-dos p span {
-  color: var(--warm);
-  display: block;
-  font-family: var(--display);
-  letter-spacing: 0.1em;
-  margin-bottom: 7px;
-  text-transform: uppercase;
-}
-
-.counter-line {
-  border-bottom: 1px solid #5d759f;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding-bottom: 26px;
-}
-
-.counter-line span {
-  color: var(--samurai);
-  font-family: var(--display);
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.counter-line i {
-  border: 1px solid var(--samurai);
-  display: block;
-  height: 18px;
-  margin: 0 auto 11px;
-  transform: rotate(45deg);
-  width: 18px;
-}
-
-.plate-stage {
-  border-bottom: 13px solid #8b6f4f;
-  height: 270px;
-  margin: 22px 6%;
-  position: relative;
-}
-
-.plate {
-  border: 2px solid #7c93b5;
-  bottom: 30px;
-  height: 54px;
-  left: 20%;
-  position: absolute;
-  right: 20%;
-}
-
-.piece {
-  background: var(--samurai);
-  bottom: 48px;
-  height: 22px;
-  position: absolute;
-  width: 48px;
-}
-
-.piece::after {
-  background: #d79072;
-  content: "";
-  height: 8px;
-  left: 6px;
-  position: absolute;
-  right: 6px;
-  top: 4px;
-}
-
-.piece-one { left: 30%; }
-.piece-two { left: calc(50% - 24px); }
-.piece-three { right: 30%; }
-
-.coal-map {
+.restaurant-art figcaption {
+  align-items: baseline;
+  background: color-mix(in srgb, var(--game-deep) 88%, var(--ink));
+  border-top: 1px solid color-mix(in srgb, var(--game-color) 45%, var(--line));
   display: grid;
   gap: 8px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: auto minmax(0, 1fr);
+  padding: 20px clamp(20px, 3vw, 40px);
 }
 
-.coal {
-  background: #2a2525;
-  border: 1px solid #5a4134;
-  display: block;
-  height: clamp(52px, 7vw, 94px);
-}
-
-.coal.warm { background: #67362b; }
-.coal.hot { background: #b56e38; }
-
-.resting-path,
-.traffic-wave {
-  align-items: center;
-  display: flex;
+.restaurant-art figcaption strong {
+  color: var(--game-color);
   font-family: var(--display);
-  gap: 10px;
-  justify-content: space-between;
+  font-size: 0.86rem;
   letter-spacing: 0.1em;
-  margin-top: 44px;
   text-transform: uppercase;
 }
 
-.resting-path i,
-.traffic-wave i {
-  border-top: 1px solid var(--game-color);
-  flex: 1;
+.restaurant-art figcaption span {
+  color: color-mix(in srgb, var(--game-color) 54%, var(--paper));
+  font-size: 0.86rem;
 }
-
-.traffic-wave {
-  color: var(--fry);
-  margin: 0 0 50px;
-}
-
-.lane-board {
-  border: 1px solid #426a50;
-  height: 270px;
-  position: relative;
-}
-
-.lane-board .lane {
-  border-top: 3px solid var(--fry);
-  height: 50px;
-  left: 8%;
-  position: absolute;
-  right: 14%;
-}
-
-.lane-board .lane::after {
-  border-right: 3px solid var(--fry);
-  content: "";
-  height: 50px;
-  position: absolute;
-  right: 0;
-  top: -3px;
-}
-
-.lane-a { top: 55px; }
-.lane-b { top: 118px; left: 18% !important; }
-.lane-c { top: 181px; right: 25% !important; }
-
-.batch-dot,
-.pack-dot,
-.go-dot {
-  border: 2px solid var(--fry);
-  height: 20px;
-  position: absolute;
-  right: 8%;
-  width: 20px;
-}
-
-.batch-dot { background: var(--warm); top: 45px; }
-.pack-dot { top: 108px; }
-.go-dot { background: var(--fry); top: 171px; }
 
 .approach {
   border-bottom: 1px solid var(--line);
@@ -1486,7 +1317,7 @@ svg {
     grid-template-columns: 1fr 440px;
   }
 
-  .game-chapter:nth-child(even) .instrument { order: 2; border-left: 1px solid var(--line); border-right: 0; }
+  .game-chapter:nth-child(even) .restaurant-art { order: 2; border-left: 1px solid var(--line); border-right: 0; }
   .game-chapter:nth-child(even) .chapter-copy { order: 1; }
 }
 
@@ -1546,14 +1377,18 @@ svg {
     padding: 90px 44px 70px;
   }
 
-  .instrument,
-  .game-chapter:nth-child(even) .instrument {
+  .restaurant-art,
+  .game-chapter:nth-child(even) .restaurant-art {
     border-left: 0;
     border-right: 0;
     border-top: 1px solid var(--line);
-    min-height: 530px;
     order: 2;
-    padding: 70px 12vw;
+  }
+
+  .restaurant-art img {
+    aspect-ratio: 16 / 10;
+    height: auto;
+    min-height: 0;
   }
 
   .approach,
@@ -1570,7 +1405,7 @@ svg {
 
 @media (max-width: 620px) {
   .brand span { font-size: 0.88rem; }
-  .brand-mark { height: 30px; width: 30px; }
+  .brand-mark { height: 34px; width: 34px; }
   .header-action { display: none; }
 
   .hero-rail {
@@ -1618,18 +1453,14 @@ svg {
     grid-template-columns: 1fr;
   }
 
-  .instrument,
-  .game-chapter:nth-child(even) .instrument {
-    min-height: 470px;
-    padding: 56px 20px;
+  .restaurant-art img {
+    aspect-ratio: 4 / 3;
   }
 
-  .instrument-dos { grid-template-columns: 88px 1fr; }
-
-  .piece { width: 36px; }
-  .piece-one { left: 26%; }
-  .piece-two { left: calc(50% - 18px); }
-  .piece-three { right: 26%; }
+  .restaurant-art figcaption {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
 
   .approach,
   .closing {

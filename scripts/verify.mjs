@@ -17,10 +17,24 @@ const designSidecar = JSON.parse(read(".impeccable/design.json"));
 if (!html.startsWith("<!doctype html>")) fail("index.html must use the HTML5 doctype");
 if (!html.includes("<title>Open Sign Restaurant Group</title>")) fail("page title is not exact");
 if ((html.match(/<h1\b/g) ?? []).length !== 1) fail("page must contain exactly one h1");
+if (!html.includes("Powered by Tezos")) fail("Tezos attribution is missing");
+if (!html.toLowerCase().includes("a crypto blockchain")) fail("Tezos needs a plain-language description");
+if (html.includes("https://github.com/")) fail("visitor-facing GitHub links are not allowed");
 
 for (const title of ["Dos Esposas", "Samurai Sushi", "The Tender Baron", "Fry Signal"]) {
   if (!html.includes(title)) fail(`missing restaurant title: ${title}`);
 }
+
+for (const artwork of [
+  "assets/restaurants/dos-esposas-kitchen.webp",
+  "assets/restaurants/samurai-sushi-counter.webp",
+  "assets/restaurants/tender-baron-hearth.webp",
+  "assets/restaurants/fry-signal-kitchen.webp",
+]) {
+  if (!html.includes(artwork)) fail(`missing restaurant artwork reference: ${artwork}`);
+}
+
+if (!html.includes("assets/open-sign-mark.svg")) fail("group identity mark is missing");
 
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
 const duplicateIds = ids.filter((id, index) => ids.indexOf(id) !== index);
@@ -61,6 +75,9 @@ console.log(
       fragmentLinks: fragments.length,
       localReferences: new Set(localReferences).size,
       runtimeDependencies: 0,
+      visitorGithubLinks: 0,
+      restaurantArtwork: 4,
+      tezosAttribution: "ok",
       scriptSyntax: "ok",
       designSystem: "ok",
     },

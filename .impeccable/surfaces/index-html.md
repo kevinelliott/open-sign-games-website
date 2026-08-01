@@ -9,17 +9,19 @@ related_targets: []
 
 The single public homepage at `index.html`; Experience mode with a compact
 Persuade responsibility. The four game worlds lead, while visitors must still
-understand the group and find truthful project status and source links quickly.
+understand the group, its Tezos foundation, and truthful project status quickly.
 
 ## Audience, job, action, proof, constraints
 
 First-time visitors compare four restaurant games and choose a door; existing
 players inspect status and the play-first ownership boundary. Primary action:
 explore the restaurant chapters. Secondary actions: inspect the group approach
-and visit a project's source. Proof comes from concrete fantasy, verbs, pace,
+and current stage. Proof comes from concrete fantasy, verbs, pace,
 pressure, signature interaction, and exact repository status for every title.
 Static HTML/CSS/JS, GitHub Pages, usable without JavaScript, WCAG 2.2 AA, no
-invented launch or hospitality claims.
+invented launch or hospitality claims, and no visitor-facing source-repository
+links. The site names Tezos in plain language as a crypto blockchain without
+turning the chain into the primary action.
 
 ## Chosen direction and memorable moment
 
@@ -40,6 +42,7 @@ photorealistic surfaces are explicitly not approved content.
 | Visible ingredient | Commitment | Medium |
 | --- | --- | --- |
 | Editorial rail | Exact title, two-line thesis, concise intro, primary action, keyboard-readable selector | Semantic HTML/CSS |
+| Group identity | Open-circuit mark carrying four restaurant colors at favicon, header, and sign scale | Authored SVG |
 | Continuous sign circuit | Cobalt tube, visible bridge hardware, warm electrode endpoints; functional selection state | Authored inline SVG/CSS |
 | Stable four-door block | Four equal bays always visible on desktop; each identifiable by topology and label | Semantic HTML/CSS with authored flat SVG details |
 | Dos Esposas | Layered cantina shelves/workbench, lively warm window, compose/cook/inspect | HTML/CSS/SVG |
@@ -47,15 +50,15 @@ photorealistic surfaces are explicitly not approved content.
 | The Tender Baron | Tall theatre-of-service arch, coal/rest/carve geometry, burgundy/brass | HTML/CSS/SVG |
 | Fry Signal | Horizontal routing lanes, signal lamps, drive-through window, green/amber | HTML/CSS/SVG |
 | Active workbench | Selected game's fantasy, verbs, pace, pressure, signature interaction, honest status | Semantic HTML/CSS/JS progressive enhancement |
-| Restaurant chapters | Four structurally distinct editorial sections rather than generic cards | Semantic HTML/CSS |
-| Standards and close | Four play-first standards, compact status/contact close, source links | Semantic HTML/CSS |
+| Restaurant chapters | Four structurally distinct editorial sections with high-detail, title-specific pixel-art environments | Semantic HTML/CSS + optimized WebP |
+| Standards and close | Four play-first standards, compact status/contact close, internal chapter links | Semantic HTML/CSS |
 
 ## Unresolved decisions
 
 The repository provides no confirmed public play URLs, launch dates,
-testimonials, press, or direct contact address. Source links are the only public
-destinations; the site must keep status labels non-promotional until publication
-evidence changes.
+testimonials, press, or direct contact address. The site must keep status labels
+non-promotional and avoid external calls to action until publication evidence
+changes.
 
 ## Verification notes
 
