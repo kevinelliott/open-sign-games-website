@@ -56,9 +56,10 @@ become available. The homepage does not link visitors to source repositories.
 - The homepage must remain fully usable without JavaScript; JavaScript may add
   progressive interaction only.
 - Deployment target is GitHub Pages from a dependency-free static repository.
-- The public homepage identifies the games as powered by **Tezos**, described in
-  plain language as a crypto blockchain. It makes no broader chain, token,
-  commercial, or investment claim.
+- The public homepage identifies **Tezos** as the first blockchain planned for
+  all four restaurant games. It uses the Tezos mark but does not claim that any
+  title is deployed onchain yet, and makes no broader chain, token, commercial,
+  partnership, or investment claim.
 - Visitor-facing links must remain on the public site until a confirmed play or
   contact destination is approved; source repositories are evidence, not calls
   to action.

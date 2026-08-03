@@ -1,4 +1,15 @@
-# Restaurant artwork provenance
+# Asset provenance
+
+## Tezos mark
+
+`assets/tezos-mark.svg` preserves the blue Tezos mark published at
+<https://commons.wikimedia.org/wiki/File:Tezos_logo.svg>. The asset page
+identifies Tezos.com as its source, Arthur Breitman as its author, and releases
+the SVG under the CC0 1.0 Universal Public Domain Dedication. The local copy
+adds only an accessible title; its path geometry and `#2C7DF7` brand color are
+unchanged.
+
+## Restaurant artwork
 
 The four restaurant environment illustrations were generated with the built-in
 OpenAI ImageGen tool on 2026-08-01, then resized to 1440 pixels wide and encoded

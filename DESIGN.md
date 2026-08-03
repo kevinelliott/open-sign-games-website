@@ -210,6 +210,16 @@ and grounded spatial depth rather than sketch illustration or generic key art.
 - **State:** status is always written in text; color may reinforce but never
   replace the label.
 
+### Tezos chain marker
+
+- **Structure:** the official blue Tezos mark leads one item in the group
+  commitment strip, paired with the exact statement that Tezos is the first
+  planned blockchain.
+- **Hierarchy:** the marker is visible near the opening block but remains
+  secondary to the Open Sign house lockup and restaurant selection.
+- **Truth boundary:** it never implies a current deployment, formal partnership,
+  token offer, or investment value.
+
 ### Façades
 
 - **Structure:** four equal bays with a sign, a deliberate crop of the matching

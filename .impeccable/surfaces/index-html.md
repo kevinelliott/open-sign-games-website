@@ -14,14 +14,15 @@ understand the group, its Tezos foundation, and truthful project status quickly.
 ## Audience, job, action, proof, constraints
 
 First-time visitors compare four restaurant games and choose a door; existing
-players inspect status and the play-first ownership boundary. Primary action:
+players inspect status, the play-first ownership boundary, and the plan to use
+Tezos as the first blockchain for all four titles. Primary action:
 explore the restaurant chapters. Secondary actions: inspect the group approach
 and current stage. Proof comes from concrete fantasy, verbs, pace,
 pressure, signature interaction, and exact repository status for every title.
 Static HTML/CSS/JS, GitHub Pages, usable without JavaScript, WCAG 2.2 AA, no
 invented launch or hospitality claims, and no visitor-facing source-repository
-links. The site names Tezos in plain language as a crypto blockchain without
-turning the chain into the primary action.
+links. The site pairs the Tezos mark with exact future-state language without
+turning the chain into the primary action or implying a current deployment.
 
 ## Chosen direction and memorable moment
 

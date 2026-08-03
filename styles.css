@@ -792,6 +792,20 @@ svg {
   text-transform: none;
 }
 
+.truth-strip__tezos::before {
+  display: none;
+}
+
+.truth-strip__tezos img {
+  flex: 0 0 auto;
+  height: 42px;
+  width: auto;
+}
+
+.truth-strip__tezos span {
+  color: var(--paper);
+}
+
 .restaurant-chapters {
   overflow: hidden;
 }
@@ -1232,6 +1246,7 @@ svg {
   .console-link { grid-column: auto; }
 
   .truth-strip { padding: 0 20px; }
+  .truth-strip__tezos img { height: 46px; }
 
   .chapter-copy,
   .game-chapter:nth-child(even) .chapter-copy {

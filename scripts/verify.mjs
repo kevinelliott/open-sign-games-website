@@ -18,8 +18,10 @@ const cloudflareHeaders = read("_headers");
 if (!html.startsWith("<!doctype html>")) fail("index.html must use the HTML5 doctype");
 if (!html.includes("<title>Open Sign Restaurant Group</title>")) fail("page title is not exact");
 if ((html.match(/<h1\b/g) ?? []).length !== 1) fail("page must contain exactly one h1");
-if (!html.includes("Powered by Tezos")) fail("Tezos attribution is missing");
-if (!html.toLowerCase().includes("a crypto blockchain")) fail("Tezos needs a plain-language description");
+if (!html.includes("Starting with Tezos")) fail("Tezos attribution is missing");
+if (!html.includes("Our first planned blockchain")) fail("Tezos needs an exact future-state description");
+if (!html.includes('src="assets/tezos-mark.svg"')) fail("Tezos mark is missing");
+if (html.includes("Powered by Tezos")) fail("Tezos must not be presented as a current deployment");
 if (html.includes("https://github.com/")) fail("visitor-facing GitHub links are not allowed");
 
 for (const title of ["Dos Esposas", "Samurai Sushi", "The Tender Baron", "Fry Signal"]) {
@@ -82,6 +84,11 @@ if (!html.includes("assets/open-sign-mark.svg")) fail("group identity mark is mi
 const mark = read("assets/open-sign-mark.svg");
 if (!mark.includes('data-part="os-monogram"') || !mark.includes('data-part="restaurant-color-rule"')) {
   fail("group mark must combine the OS house monogram and restaurant color rule");
+}
+
+const tezosMark = read("assets/tezos-mark.svg");
+if (!tezosMark.includes('fill="#2C7DF7"') || !tezosMark.includes("Tezos")) {
+  fail("Tezos mark must preserve the identified brand asset");
 }
 const lockupCount = [...html.matchAll(/class="[^"]*\bbrand-lockup\b[^"]*"/g)].length;
 if (lockupCount !== 2 || html.includes('class="group-name"')) {
