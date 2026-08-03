@@ -21,6 +21,14 @@ if ((html.match(/<h1\b/g) ?? []).length !== 1) fail("page must contain exactly o
 if (!html.includes("Starting with Tezos")) fail("Tezos attribution is missing");
 if (!html.includes("Our first planned blockchain")) fail("Tezos needs an exact future-state description");
 if (!html.includes('src="assets/tezos-mark.svg"')) fail("Tezos mark is missing");
+const tezosMarkReferences = html.split('src="assets/tezos-mark.svg"').length - 1;
+if (tezosMarkReferences < 6) fail("Tezos identity must appear at the threshold, commitment strip, and all four restaurant chapters");
+if ((html.match(/class="chapter-chain"/g) ?? []).length !== 4) {
+  fail("every restaurant chapter needs its own Tezos first-chain marker");
+}
+if (!html.includes("First planned chain") || !html.includes("Planned first blockchain")) {
+  fail("expanded Tezos references need exact future-state language");
+}
 if (html.includes("Powered by Tezos")) fail("Tezos must not be presented as a current deployment");
 if (html.includes("https://github.com/")) fail("visitor-facing GitHub links are not allowed");
 
@@ -149,6 +157,7 @@ console.log(
       restaurantArtwork: 4,
       facadeArtworkPreviews: 4,
       tezosAttribution: "ok",
+      tezosMarkReferences,
       scriptSyntax: "ok",
       designSystem: "ok",
     },

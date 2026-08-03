@@ -434,9 +434,12 @@ svg {
 }
 
 .threshold-sign {
+  align-items: center;
   background: var(--ink);
   border: 1px solid var(--line-strong);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.32);
+  display: flex;
+  gap: clamp(20px, 2.2vw, 36px);
   padding: clamp(10px, 1vw, 14px) clamp(18px, 2.5vw, 38px);
 }
 
@@ -446,6 +449,41 @@ svg {
   --name-size: clamp(2.5rem, 3.25vw, 4rem);
   --signature-gap: clamp(8px, 0.6vw, 11px);
   --signature-size: clamp(0.72rem, 0.76vw, 0.9rem);
+}
+
+.threshold-chain {
+  align-items: center;
+  border-left: 1px solid var(--line);
+  display: flex;
+  flex: 0 0 auto;
+  gap: 11px;
+  padding-left: clamp(18px, 2vw, 30px);
+}
+
+.threshold-chain img {
+  height: clamp(34px, 3vw, 46px);
+  width: auto;
+}
+
+.threshold-chain > span {
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: var(--display);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.threshold-chain strong {
+  color: var(--paper);
+  font-size: clamp(1.25rem, 1.45vw, 1.7rem);
+  letter-spacing: 0.035em;
+}
+
+.threshold-chain small {
+  color: var(--cobalt-bright);
+  font-size: 0.62rem;
+  letter-spacing: 0.13em;
+  margin-top: 6px;
 }
 
 .threshold-wire {
@@ -844,6 +882,38 @@ svg {
   margin: 0;
 }
 
+.chapter-chain {
+  align-items: center;
+  display: flex;
+  gap: 11px;
+  margin: 25px 0 0;
+}
+
+.chapter-chain img {
+  flex: 0 0 auto;
+  height: 30px;
+  width: auto;
+}
+
+.chapter-chain > span {
+  display: grid;
+  line-height: 1.1;
+}
+
+.chapter-chain strong {
+  color: var(--paper);
+  font-family: var(--display);
+  font-size: 0.96rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.chapter-chain small {
+  color: var(--cobalt-bright);
+  font-size: 0.73rem;
+  margin-top: 3px;
+}
+
 .chapter-line {
   color: var(--game-color) !important;
   font-family: var(--display);
@@ -1232,6 +1302,22 @@ svg {
     --signature-gap: 7px;
     --signature-size: 0.64rem;
   }
+
+  .threshold-sign {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .threshold-chain {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .threshold-chain img { height: 30px; }
 
   .facades { display: block; }
   .facade + .facade { border-left: 0; border-top: 1px solid var(--line); }

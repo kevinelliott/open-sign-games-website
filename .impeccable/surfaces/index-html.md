@@ -23,6 +23,8 @@ Static HTML/CSS/JS, GitHub Pages, usable without JavaScript, WCAG 2.2 AA, no
 invented launch or hospitality claims, and no visitor-facing source-repository
 links. The site pairs the Tezos mark with exact future-state language without
 turning the chain into the primary action or implying a current deployment.
+The mark repeats at the shared threshold and in each restaurant chapter so the
+first-chain direction is visible in context rather than isolated in metadata.
 
 ## Chosen direction and memorable moment
 
